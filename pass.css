@@ -1,0 +1,168 @@
+/* Section Générateur de Mot de Passe */
+#password-generator {
+    background-color: #f5f5f5;
+    padding: var(--spacing) 0;
+  }
+  
+  #password-generator .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 var(--spacing);
+    text-align: center;
+  }
+  
+  #password-generator h2 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+  }
+  
+  #password-generator .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  #password-generator label {
+    display: block;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  #password-generator input[type="number"],
+  #password-generator input[type="text"] {
+    width: calc(100% - 1rem);
+    padding: 0.5rem;
+    font-size: 1.2em;
+    margin-bottom: 1rem;
+  }
+  
+  #password-generator input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  #password-generator button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  #password-generator button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  #password-generator .password-display {
+    margin-top: 1.5rem;
+  }
+  
+  #password-generator .password-display input[type="text"] {
+    width: calc(100% - 1rem);
+    padding: 0.5rem;
+    font-size: 1.2em;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+  }
+  
+  #password-generator .password-display button {
+    margin-top: 0;
+  }
+
+  
+
+  /* Définition des couleurs et des polices */
+:root {
+    --primary-color: #f04e98;
+    --secondary-color: #333;
+    --background-color: #f9f9f9;
+    --accent-color: #ffcccb;
+    --font-family: 'Roboto', sans-serif;
+    --font-size-base: 16px;
+    --spacing: 1rem;
+    --max-width: 1200px;
+  }
+  
+  /* CSS pour le défilement fluide */
+html {
+    scroll-behavior: smooth;
+  }
+
+
+  body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  /* Conteneur global */
+  .container {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--spacing) 0;
+  }
+  
+  /* En-tête et navigation */
+  header {
+    background-color: white;
+    padding: var(--spacing) 0;
+    border-bottom: 2px solid var(--primary-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    text-align: center;
+    margin: 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing);
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin: 0 1rem;
+    padding: 0.5rem;
+    transition: color 0.3s;
+    border-bottom: 2px solid transparent;
+  }
+  
+  nav a:hover {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+  }
+  
+  /* Sections */
+  section {
+    padding: var(--spacing) 0;
+    margin: var(--spacing) 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h2 {
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-bottom: var(--spacing);
+    text-align: center;
+    border-bottom: 2px solid var(--accent-color);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+  }
+  
